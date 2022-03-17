@@ -1,32 +1,31 @@
 {
-    "name": "project",
-    "version": "0.1.0",
-    "description": "SASS compile|autoprefix|minimize and live-reload dev server using Browsersync for static HTML",
-    "main": "public/index.html",
-    "author": "Laksh",
-    
-    "scripts": {
-      "build:sass": "sass  --no-source-map src/sass:public/css",
-      "copy:html": "copyfiles -u 1 ./src/*.html public",
-      "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
-      "copy": "npm-run-all --parallel copy:*",
-      "watch:assets": "onchange \"src/assets/**/*\" -- npm run copy:html",
-      "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
-      "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
-      "watch": "npm-run-all --parallel watch:*",
-      "serve": "browser-sync start --server public --files public",
-      "start": "npm-run-all copy --parallel watch serve",
-      "build": "npm-run-all copy:html build:*",
-      "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
-    },
-    "dependencies": {
-      "autoprefixer": "^10.4.2",
-      "browser-sync": "^2.27.7",
-      "copyfiles": "^2.4.1",
-      "cssnano": "^5.0.17",
-      "npm-run-all": "^4.1.5",
-      "onchange": "^7.1.0",
-      "postcss-cli": "^9.1.0",
-      "sass": "^1.49.8"
-    }
+  "name": "dark-light-toggle-fem",
+  "version": "1.0.0",
+  "description": "A landing page with dark-light toggle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyLaksh/dark-light-toggle-fem.git"
+  },
+  "author": "Laksh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyLaksh/dark-light-toggle-fem/issues"
+  },
+  "homepage": "https://github.com/heyLaksh/dark-light-toggle-fem#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.9",
+    "cssnano": "^5.1.4",
+    "gulp-cli": "^2.3.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.49.9"
+  }
 }

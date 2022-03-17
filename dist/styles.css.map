@@ -1,0 +1,1 @@
+{"version":3,"sources":["_globals.scss","styles.css"],"names":[],"mappings":"AAAA,KAGI,uBAAA,CACA,UAAA,CAHA,QAAA,CACA,SCGJ","file":"styles.css","sourcesContent":["body {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: purple;\r\n    color: white;\r\n}","body {\n  margin: 0;\n  padding: 0;\n  background-color: purple;\n  color: white;\n}"]}
